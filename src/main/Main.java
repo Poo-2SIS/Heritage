@@ -23,6 +23,12 @@ public class Main {
         for (Empregado empregado : empregados) {
             System.out.println(empregado.getDados());
         }
+        Controle ctrl = new Controle();
+        ctrl.inserir(teste);
+        ctrl.inserir(teste2);
+        System.out.println(ctrl.pesquisar(2));
+        System.out.println(ctrl.pesquisar(3));
+        System.out.println(ctrl.listar());
 
 
     }
