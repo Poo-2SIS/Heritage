@@ -6,24 +6,22 @@ import models.EmpregadoHorista;
 
 public class Main {
     public static void main(String[] args) {
-        EmpregadoComissionado teste =  new EmpregadoComissionado();
-        teste.nome = "Jorge";
-        teste.matricula = 1;
-        teste.comissao = 150.25;
-        teste.totalDeVendas = 60;
+        EmpregadoComissionado teste =  new EmpregadoComissionado("Jorge",
+                1,
+                150.25,
+                10);
 
-        EmpregadoHorista teste2 = new EmpregadoHorista();
-        teste2.nome = "Antonio";
-        teste2.matricula = 2;
-        teste2.valorDaHoraTrabalhada = 23;
-        teste2.totalDeHorasTrabalhadas = 100;
+        EmpregadoHorista teste2 = new EmpregadoHorista("Antonio",
+                2,
+                23,
+                100);
 
         Empregado[] empregados = new Empregado[2];
         empregados[0] = teste;
         empregados[1] = teste2;
 
         for (Empregado empregado : empregados) {
-            System.out.println(empregado.calcularSalario());
+            System.out.println(empregado.getDados());
         }
 
 
