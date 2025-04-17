@@ -3,6 +3,7 @@ package main;
 import models.Empregado;
 import models.EmpregadoComissionado;
 import models.EmpregadoHorista;
+import utils.Utils;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,6 +31,8 @@ public class Main {
         System.out.println(ctrl.pesquisar(3));
         System.out.println(ctrl.listar());
 
+        Utils utils = new Utils();
+        utils.menu();
 
     }
 }

@@ -2,7 +2,7 @@ package models;
 
 public class EmpregadoHorista extends Empregado {
     public int totalDeHorasTrabalhadas;
-    public int valorDaHoraTrabalhada;
+    public double valorDaHoraTrabalhada;
 
     public EmpregadoHorista(String nome, int matricula, int totalDeHorasTrabalhadas, int valorDaHoraTrabalhada) {
         super(nome, matricula);
